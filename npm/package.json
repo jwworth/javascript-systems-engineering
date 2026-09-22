@@ -10,7 +10,8 @@
     "clone": "tsx ./bin/clone",
     "checkout": "tsx ./bin/checkout",
     "status": "tsx ./bin/status",
-    "download": "tsx ./bin/download"
+    "download": "tsx ./bin/download",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
