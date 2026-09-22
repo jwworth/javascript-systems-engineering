@@ -3,3 +3,6 @@ lodash/
 
 # Dependency packages
 node_modules/
+
+# Tape Archive / Gzip compression files
+*.tar.gz
