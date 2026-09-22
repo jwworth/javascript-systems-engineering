@@ -1,2 +1,5 @@
 # Example repo for cloning
 lodash/
+
+# Dependency packages
+node_modules/
