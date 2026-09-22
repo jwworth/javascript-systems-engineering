@@ -1,11 +1,20 @@
-import {execSync} from 'child_process';
+import {execFileSync} from 'node:child_process';
 
-const repoURL = 'git@github.com:lodash/lodash.git';
+const repoUrl = 'git@github.com:lodash/lodash.git';
+
+function main() {
+  console.log('Cloning lodash...');
+
+  execFileSync('git', ['clone', repoUrl], {
+    stdio: 'inherit',
+  });
+
+  console.log('Cloned!');
+}
 
 try {
-  console.log('Cloning lodash...');
-  execSync(`git clone ${repoURL}`, {stdio: 'inherit'});
-  console.log('Cloned!');
+  main();
 } catch (error) {
-  console.log('Failed to clone repo: ', error);
+  console.error('Clone failed.');
+  process.exitCode = 1;
 }

@@ -1,12 +1,17 @@
 import {execSync} from 'child_process';
 
-try {
+function main() {
   console.log('Checkings status...');
 
   process.chdir('./lodash');
   execSync(`git status`, {stdio: 'inherit'});
 
   console.log('Status read!');
+}
+
+try {
+  main();
 } catch (error) {
-  console.log('Failed to access status: ', error);
+  console.error('Status check failed.');
+  process.exitCode = 1;
 }
