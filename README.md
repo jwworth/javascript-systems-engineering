@@ -14,6 +14,17 @@ JS Meetup. This code is experimental and is for demonstration purposes only.
 1. Perform operation via SSH
 1. SSH key forwarding for jumping to another host
 
+## Setup
+
+For the NPM directory, install Node and npm. Then:
+
+```
+cd npm/
+npm install
+```
+
+Any command in `package.json` under `scripts` is available to explore.
+
 ## License
 
 [MIT](https://opensource.org/license/mit).
