@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "clone": "tsx ./bin/clone",
-    "checkout": "tsx ./bin/checkout"
+    "checkout": "tsx ./bin/checkout",
+    "status": "tsx ./bin/status"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
