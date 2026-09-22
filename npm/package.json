@@ -11,7 +11,8 @@
     "checkout": "tsx ./bin/checkout",
     "status": "tsx ./bin/status",
     "download": "tsx ./bin/download",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
