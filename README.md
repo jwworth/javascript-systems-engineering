@@ -23,7 +23,12 @@ cd npm/
 npm install
 ```
 
-Any command in `package.json` under `scripts` is available to explore.
+Any command in `package.json` under `scripts` is available to explore. One that
+combines a few of them is:
+
+```
+npm run validate
+```
 
 ## License
 
