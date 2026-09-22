@@ -7,9 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "clone": "tsx ./bin/clone"
+    "clone": "tsx ./bin/clone",
+    "checkout": "tsx ./bin/checkout"
   },
   "devDependencies": {
+    "@types/node": "^26.6.2",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
