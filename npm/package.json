@@ -12,7 +12,9 @@
     "status": "tsx ./bin/status",
     "download": "tsx ./bin/download",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-types": "tsc --noEmit",
+    "check-format": "prettier --check .",
+    "validate": "npm run check-types && npm run check-format"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
