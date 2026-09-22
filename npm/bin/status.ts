@@ -12,6 +12,6 @@ function main() {
 try {
   main();
 } catch (error) {
-  console.error('Status check failed.');
+  console.error('Status check failed: ', error);
   process.exitCode = 1;
 }

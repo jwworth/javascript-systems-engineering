@@ -12,6 +12,6 @@ function main() {
 try {
   main();
 } catch (error) {
-  console.error('Check out failed.');
+  console.error('Check out failed: ', error);
   process.exitCode = 1;
 }

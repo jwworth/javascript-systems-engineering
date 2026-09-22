@@ -15,6 +15,6 @@ function main() {
 try {
   main();
 } catch (error) {
-  console.error('Clone failed.');
+  console.error('Clone failed: ', error);
   process.exitCode = 1;
 }
